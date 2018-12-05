@@ -1,25 +1,9 @@
 #!/usr/bin/python2.7
-from hosted import device, requests, time, config, node, device, api, ApiClient
+from hosted import device, node, config
 config.restart_on_update()
+
 device.gpio.monitor(config.pin)
-for pin, state in device.gpio.poll_forever():
-    try:
-        api = ApiClient("BBFF-d0933011a44f772c93197bbfc7a0e985bd9")
-        people = api.get_variable("5bc420411d84722bd57696e9")
-    except:
-        print "Couldn't connect to the API, check your Internet connection"
-    counter = 0
-    peoplecount = 0
-    while(1):
-        presence = device.gpio.monitor(config.pin)
-        if(presence):
-            peoplecount += 1
-            presence = 0
-            time.sleep(1.5)
-        time.sleep(1)
+for (pin, state) in device.gpio.poll_forever():
+    if state is True:
         counter += 1
-        if(counter==10):
-            print peoplecount
-            people.save_value({'value':peoplecount})
-            counter = 0
-            peoplecount = 0
+        node.send('/counter:%d' % counter)
