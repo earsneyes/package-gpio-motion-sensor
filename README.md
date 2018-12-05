@@ -10,3 +10,6 @@ Here's the wiring you'll need and how it works:
 The PIR Sensor connects the 5V output PIN to GPIO11 of your Pi.
 
 ![Wiring](pinout.png)
+
+![WiringPic](pinout_IRL.jpeg)
+
