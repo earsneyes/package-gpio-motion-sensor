@@ -1,5 +1,5 @@
 {
-    "name": "GPIO Demo",
+    "name": "GPIO Motion Sensor",
     "permissions": {
         "gpio": "Access GPIO"
     },
