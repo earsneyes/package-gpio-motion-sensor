@@ -2,6 +2,7 @@
 from hosted import device, node, config
 config.restart_on_update()
 
+counter
 device.gpio.monitor(config.pin)
 for (pin, state) in device.gpio.poll_forever():
     if state is True:
