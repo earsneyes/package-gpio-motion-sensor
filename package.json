@@ -1,6 +1,6 @@
 {
-    "name": "GPIO Demo",
-    "author": "Florian Wesch <fw@info-beamer.com>",
-    "desc": "Demonstrate GPIO integration",
-    "repository": "https://github.com/info-beamer/package-gpio-demo"
+    "name": "Motion Sensor Demo",
+    "author": "Loopy",
+    "desc": "Demonstrate Motion Sensor",
+    "repository": "https://github.com/LoopForYou/package-GPIO-motion-sensor"
 }
