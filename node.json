@@ -1,7 +1,8 @@
 {
     "name": "GPIO Motion Sensor",
     "permissions": {
-        "gpio": "Access GPIO"
+        "gpio": "Access GPIO",
+        "network": "Access network"
     },
     "options": [{
         "title": "PIN",
