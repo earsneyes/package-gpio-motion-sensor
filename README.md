@@ -1,4 +1,4 @@
-# GPIO demo package
+# GPIO Motion Sensor Package
 
 Now that info-beamer OS 10 is out you can use GPIO in without being in testing mode. Enjoy this motion detection package.
 
