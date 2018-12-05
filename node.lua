@@ -1,19 +1,17 @@
 gl.setup(NATIVE_WIDTH, NATIVE_HEIGHT)
 
-util.no_globals()
-
-local on = false
+local font = resource.load_font "font.ttf"
+local count = 0
 
 util.data_mapper{
-    state = function(state)
-        on = state == '1'
+    counter = function(counter)
+        count = counter
     end,
 }
 
 function node.render()
-    if on then
-        gl.clear(0, 1, 0, 1) -- green
-    else
-        gl.clear(1, 0, 0, 1) -- red
-    end
+    gl.clear(0,0,0,1)
+    font:write(30, 10, "Motion Detected", 100, .5,.5,.5,1)
+    countStr = tostring(count)
+    font:write(250, 300, countStr, 64, 1,1,1,1)
 end
