@@ -1,5 +1,5 @@
 gl.setup(NATIVE_WIDTH, NATIVE_HEIGHT)
-
+local font = resource.load_font "font.ttf"
 local count = 0
 
 local video = resource.load_video{
