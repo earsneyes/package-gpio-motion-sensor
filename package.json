@@ -1,6 +1,6 @@
 {
-    "name": "Motion Sensor Demo",
-    "author": "Loopy",
-    "desc": "Demonstrate Motion Sensor",
-    "repository": "https://github.com/LoopForYou/package-GPIO-motion-sensor"
+    "name": "Motion Sensor Trigger Video HelloWorld Demo",
+    "author": "earsneyes",
+    "desc": "Demonstrate Motion Sensor triggered video playback",
+    "repository": "https://github.com/earsneyes/package-GPIO-motion-sensor"
 }
