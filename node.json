@@ -1,5 +1,5 @@
 {
-    "name": "GPIO Motion Sensor",
+    "name": "GPIO Motion Sensor Trigger Test",
     "permissions": {
         "gpio": "Access GPIO",
         "network": "Access network"
